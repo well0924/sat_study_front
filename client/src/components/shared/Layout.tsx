@@ -30,7 +30,9 @@ const Layout = ({ children }: Props) => {
     navigate("/login"); // 홈으로 이동
   };
 
-
+  const handleJoinPage = () => {
+    navigate("/join");
+  }
   return (
     <>
       <Box sx={{ flexGrow: 1 }}>
@@ -52,9 +54,14 @@ const Layout = ({ children }: Props) => {
                   로그아웃
                 </Button>
               ) : (
-                <Button color="inherit" onClick={handleLoginPage}>
+                <span>
+                  <Button color="inherit" onClick={handleLoginPage}>
                   로그인
-                </Button>
+                  </Button>
+                  <Button color="inherit" onClick={handleJoinPage}>
+                    회원가입
+                  </Button>
+                </span>
               )}
             </div>
           </Toolbar>

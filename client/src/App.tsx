@@ -4,6 +4,7 @@ import { Layout } from "./components/shared";
 import {
   CartPage,
   HomePage,
+  JoinPage,
   NotFoundPage,
   ProductCreatePage,
   ProductPage,
@@ -21,6 +22,7 @@ function App() {
           <Route path="create" element={<ProductCreatePage />} />
           <Route path="cart" element={<CartPage />} />
           <Route path="login" element={<LoginPage />} />
+          <Route path="join" element={<JoinPage />} />
           <Route path="product/:productId" element={<ProductPage />} />
           <Route path="purchase/:productId" element={<PurchasePage />} />
           <Route path="*" element={<NotFoundPage />} />
